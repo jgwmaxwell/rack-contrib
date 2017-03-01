@@ -10,10 +10,12 @@ rvm:
 gemfile:
   - Gemfile
   - test/gemfiles/rack-1.x-gemfile
-  - test/gemfiles/minimum_versions
+  - test/gemfiles/2.3-and-up-minimum_versions
 
 matrix:
   include:
+    - rvm: 2.2.6
+      gemfile: test/gemfiles/minimum_versions
     - rvm: 2.1.6
       gemfile: test/gemfiles/rack-1.x-gemfile
     - rvm: 2.1.6
